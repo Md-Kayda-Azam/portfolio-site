@@ -138,7 +138,7 @@ const NavBar = () => {
         {showMenu && (
           <div
             onClick={handleClick}
-            ref={(node) => (ref.current = node)}
+            ref={ref.current}
             className="absolute mdl:hidden top-0 right-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-end"
           >
             <motion.div
